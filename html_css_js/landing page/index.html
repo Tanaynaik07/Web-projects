@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    footer{
+        bottom: 100px;
+        position: fixed;
+        height: 10vh;
+        color: white;
+        gap: 20px;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100vw;
+        
+    }
+
+
+    .footer1{
+        height: 20px;
+        display: flex;
+        gap: 20px;
+        margin-left: 30px;
+        }
+    
+    .footer2{
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+    section{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;    
+        justify-content: center;
+        gap:40px;
+        height: 580px;
+    }
+    
+    #p1,#p2{
+        font-style: italic
+    }
+
+    #p1{
+        font-size: 30px;
+        font-weight: bold;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    
+    #email-box{
+        background-color: black;
+        border: none;
+        color: white;
+        height:15px;
+        width: 150px;
+        vertical-align: baseline;
+    }
+
+    #email{
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+    }
+
+    #signup{
+        background-color:  #1cb495;
+        color: white;
+        border-radius: 5px;
+    }
+
+</style>
+<body background="img/landing page.jpg">
+
+    <section>
+        <div id="p1">
+            <span>Eventually</span>
+        </div>
+
+        <div id="p2"><span>A simple template for telling the world when you'll launch<br>
+            your next big thing. Brought to you by HTML5 UP.</span></div>
+        
+            <div id="email">
+                <form>
+                <input type="text" placeholder="Email Address" id="email-box" maxlength=20 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter into format XYZ@gmail.com" required >
+                <button id="signup">Sign Up</button>
+            </form>
+            </div>
+    </section>
+    <footer>
+        <div class="footer1">
+            
+            <i class="icon-twitter icon-2x" ></i>
+            <i class="icon-instagram icon-2x" ></i>
+            <i class="icon-github icon-2x" ></i>    
+         
+        </div>
+        <div class="footer2">© Untitled. | Credits : Tanay_N</div>
+    </footer>
+
+
+</body>
+<script>
+    let email;
+
+    document.getElementById("signup").onclick=function(){
+        email=document.getElementById("email-box").value;
+        emailbox=document.getElementById("email-box");
+        console.log(email);
+    }
+</script>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo">
+
+                <img class="spotify" src="img/spotify.png">
+            </div>
+
+            <div class="options">
+
+                <li>
+                    <a href="sorry.html">
+                    <button class="option">
+                        Home
+                    </button>
+                </a>
+                </li>
+
+                <li>
+                    <a href="sorry.html">
+                    <button class="option">
+                        Search
+                    </button>
+                </a>
+                </li>
+
+
+
+                <li>
+                    <a href="sorry.html">
+                    <button class="option">
+                        Your Library
+                    </button></a>
+                </li>
+
+
+
+                <li><a href="sorry.html">
+                    <button class="option">
+                        Add Playlist
+                    </button></a>
+                </li>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="home">
+            <div class="header">
+
+                <div class="control">
+                    <img class="buttons" src="img\backward.png">
+                    <img class="buttons" src="img\forward.png">
+
+                </div>
+                <div class="lauda">
+
+                    <div class="signup"><a href="signup.html"><button id="signup"> Sign up</button></a></div>
+
+                    <div class="login"><a href="sorry.html"><button id="login">Log in</button></a></div>
+                </div>
+            </div>
+            <div class="song_card" class="hope_card">
+                <audio class="hope" src="songs/song1.mp3" preload="auto"></audio>
+                <div class="cover">
+
+                    <img class="cover_img" src="img\hope_cover">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Hope</p><p class="name_of_artist">NF</p>
+                </div>
+
+            </div>
+            <div class="song_card" id="greatest_card">
+                <div class="cover" id="greatest">
+
+                    <img class="cover_img" src="img\greatest.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Greatest</p><p class="name_of_artist">Sia</p>
+                </div>
+
+            </div>
+            <div class="song_card"  id="song_card">
+                <div class="cover">
+
+                    <img class="cover_img" src="img\until i found her.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Until I Found Her</p><p class="name_of_artist">Stephen Sanchez</p>
+                </div>
+
+            </div>
+            <div class="song_card" >
+                <div class="cover">
+
+                    <img class="cover_img" src="img\the night we met.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    The Night We Met</p><p class="name_of_artist">Lord Huron</p>
+                </div>
+
+            </div>
+            <div class="song_card" >
+                <div class="cover">
+
+                    <img class="cover_img" src="img\alag aasama.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Alag Aasama</p><p class="name_of_artist">Anuv Jain</p>
+                </div>
+
+            </div>
+            <div class="song_card" >
+                <div class="cover">
+
+                    <img class="cover_img" src="img\blinding likght.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Blinding Lights</p><p class="name_of_artist">The Weeknd</p>
+                </div>
+
+            </div>
+
+            <div class="song_card" >
+                <div class="cover">
+
+                    <img class="cover_img" src="img\hanuman chalisa.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Hanuman Chalisa</p><p class="name_of_artist">Tulsidas</p>
+                </div>
+
+            </div>
+
+            <div class="song_card" >
+                <div class="cover">
+
+                    <img class="cover_img" src="img\Shri Ram.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Shri Ram Bhajan</p><p class="name_of_artist">Tulsidas</p>
+                </div>
+
+            </div>
+
+            <div class="song_card" >
+                <div class="cover">
+
+                    <img class="cover_img" src="img/dil bechara.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Dil Bechara</p><p class="name_of_artist">A.R.Raheman</p>
+                </div>
+
+            </div>
+            
+
+            <div class="song_card" >
+                <div class="cover">
+
+                    <img class="cover_img" src="img/words.jpg">
+                </div>
+
+                <div class="info">
+                    <p class="name_of_song">
+                    Words Words Words</p><p class="name_of_artist">Bo Burman</p>
+                </div>
+
+            </div>
+            
+
+
+        </div>
+        <div class="bottom">
+            <footer>
+                <div class="song_player">
+                    <input type="range" id="player" min="0" max="100">
+                </div>
+                <div class="play_control">
+                    <img class="play" id="play_b" src="img\backward.png">
+                    <img class="play" id="play" src="img\play.png">
+                    <img class="play" id="play_f" src="img\forward.png">
+                </div>
+            </footer>
+        </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

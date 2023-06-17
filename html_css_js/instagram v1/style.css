@@ -1,0 +1,392 @@
+body {
+    display: flex;
+}
+
+img:hover {
+    cursor: pointer;
+
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+* {
+    margin: 0px;
+
+}
+
+*:hover {
+    cursor: default;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.menu {
+    width: 12vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    height: fit-content;
+
+    min-height: 100vh;
+    width: 75vw;
+}
+
+.follow {
+    width: 20vw;
+    height: 100vh;
+}
+
+#insta_text {
+    min-width: 24px;
+    max-width: 126px;
+}
+
+#menu_main {
+    height: 10%;
+    margin-left: 9px;
+    margin-top: 32px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons li {
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icons li i {
+    margin-left: 20px;
+}
+
+.icons :hover {
+    cursor: pointer;
+}
+
+.footer1 {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 10vw;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+
+}
+
+.footer1 i {
+    margin-left: 20px;
+}
+
+.main .header1 {
+    height: 20vh;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .header1 .stories {
+    height: 100px;
+    width: 80%;
+    position: static;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .header1 .stories::-webkit-scrollbar {
+    display: none;
+}
+
+.main .header1 .stories .img {
+    display: flex;
+
+    margin-left: 20px;
+    font-size: 12px;
+    color: grey;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.stories img {
+    border-radius: 50%;
+    max-height: 60px;
+    padding: 0.5px;
+    border: 3px rgb(250, 98, 217) solid;
+}
+
+.main .posts {
+    width: 100%;
+    display: flex;
+
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: scroll;
+
+
+}
+
+.post_like {
+
+    display: flex;
+    gap: 14px;
+
+}
+
+.main .posts::-webkit-scrollbar {
+    display: none;
+}
+
+.main .post {
+
+    min-height: fit-content;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.post .post_profile {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: grey;
+    font-family: cursive;
+
+}
+
+
+.post .name {
+    font-family: serif;
+}
+
+.post .post_img {
+    flex-direction: row;
+    width: 100%;
+}
+
+.post .like,
+.comment,
+.share,
+.save {
+    display: inline-block;
+
+
+}
+
+.save {
+    position: relative;
+    left: 397px;
+}
+
+.post .discription {
+    margin-top: 10px;
+}
+
+.comment_sec {
+    display: flex;
+}
+
+.coment {
+    width: 100vw;
+    border: none;
+    height: 30px;
+}
+
+.coment:focus {
+    outline: none;
+}
+
+.post_profile_img {
+    margin-left: 10px;
+    border-radius: 50%;
+    max-height: 50px;
+    padding: 0.5px;
+    border: 3px rgb(250, 98, 217) solid;
+}
+
+.post_profile i {
+    position: relative;
+    left: 372px;
+}
+
+tag {
+    height: fit-content;
+
+}
+
+.like-solid {
+    display: none;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.follow .small_box {
+    min-height: 200px;
+    max-height: 400px;
+    height: fit-content;
+
+    width: 100%;
+    background-color: white;
+}
+
+.small_profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+.follow .small_profile img {
+    height: 40px;
+    padding: 0.5px;
+    border: 3px rgb(250, 98, 217) solid;
+    border-radius: 50%;
+
+}
+
+.small_profile span {
+    font-weight: bold;
+    color: blue;
+    font-style: italic;
+}
+
+.small_profile span:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.suggestion {
+    margin: 10px 0px;
+}
+
+.suggestion_list {
+    list-style: none
+}
+
+.suggestion_list li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
+.suggestion_list img {
+    height: 30px;
+    left: -18px;
+    position: relative;
+    padding: 0.5px;
+    border: 3px rgb(250, 98, 217) solid;
+    border-radius: 50%;
+}
+
+.suggestion_list span {
+    color: blue;
+    position: relative;
+    right: -25px;
+}
+
+.suggestion_list span:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.suggestion_list span:active {
+    cursor: pointer;
+    color: grey;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #insta_text {
+        max-width: 78px;
+    }
+
+    .icons li {
+        height: 50px;
+        display: flex;
+        gap: 3px;
+        align-items: start;
+        width: 9px;
+    }
+
+    .icons {
+
+        overflow-x: hidden;
+        width: 90px;
+        padding-block-start: 10px;
+    }
+
+    .icon_text {
+        bottom: 8px;
+        position: relative;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    .stories {
+        margin-left: 66px;
+    }
+
+    .posts {
+        margin-left: 45px;
+    }
+
+    .post_profile_img {
+        margin-left: 0px;
+    }
+
+    .post .post_profile {
+        gap: 0px;
+    }
+
+    .post {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post_profile i {
+        
+        left: 0;
+        display: none;
+    }
+
+    .save {
+        
+        left: 0;
+    }
+}

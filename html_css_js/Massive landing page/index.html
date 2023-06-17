@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0%;
+    }
+
+    #top {
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        color: white;
+        justify-content: center;
+
+    }
+
+    #bg {
+
+
+        filter: brightness(0.25);
+    }
+
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        bottom: 60px;
+    }
+
+    span {
+        text-decoration: underline;
+    }
+
+    #para {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    section {
+        height: 100px;
+    }
+
+    .body {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        border-width: 100vw;
+        gap: 40px;
+        height: fit-content;
+        border-top: 1px solid grey;
+        
+
+
+
+    }
+
+    #date {
+        position: relative;
+        top: -10px;
+        text-align: center;
+    }
+
+    #dte {
+        font-style: italic;
+        text-decoration: none;
+        background-color: white;
+        padding: 0 15px;
+        font-family: cursive;
+    }
+
+
+    .p1 {
+        width: fit-content;
+        position: relative;
+        text-align: center;
+        display: flex;
+
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .full {
+        height: 70px;
+        width: 14vw;
+        background-color: white;
+        font-size: 16px;
+        color: black;
+        font-family: serif;
+        font-style: oblique;
+    }
+
+    .full:hover{
+        color: white;
+        background-color: black;
+    cursor: pointer;}
+
+
+
+    .box {
+        margin-top: 160px;
+        display: flex;
+        width: 40vw;
+        flex-wrap: wrap;
+
+        height: fit-content;
+        gap: 40px;
+        justify-content: center;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        width: 35vw;
+        text-align: center;
+        font-family: Merriweather, Georgia, serif;
+    }
+
+    .img {
+
+        width: 80%;
+    }
+
+    .img1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .full_stories {
+        border-top: 1px solid grey;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid grey;
+        flex-wrap: wrap;
+
+    }
+
+    .story_b {
+        margin-top: 40px;
+        height: 50px;
+        width: 8vw;
+        background-color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .story_b:hover{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+
+    #verti{
+        transform: rotatez(90deg);
+    height: 0px;
+    width: 100vw;
+    position: absolute;
+    left: -9px;
+    top: 2797px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.pages{
+    display: flex;
+    margin: 80px 0px;
+    justify-content: center;
+    }
+
+.buttons{
+    height: 50px;
+    padding: 0 20px;
+    min-width: 30px;
+    width: auto;
+    background-color: white;
+    border: 1px solid rgb(209, 209, 209);
+    color: rgb(24, 24, 255);
+    
+
+}
+    
+.collector{
+    height: 400px;
+    width: 88vw;
+    display: flex;
+    background-color: rgb(208, 208, 208);
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-bottom: 10px;
+    
+}
+
+.info{
+    width: 50%;
+    border-right: 2px solid black;
+    font-family: 'Times New Roman', Times, serif ;
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+input{
+    width: 20vw;
+    background-color: rgb(208, 208, 208);
+    border: 0.5px grey solid;
+    border-radius: 3px;
+    min-height: 40px;
+}
+
+label{
+    position: relative;
+    margin-top: 10px;
+    left: -136px;
+}
+
+#submit{
+    height: 30px;
+    position: relative;
+    left: -118px;
+    background-color: #0d6efd;;
+    color: white;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+}
+
+.message{
+    min-height: 50px;
+}
+
+
+
+.info2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.address{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 8.8vw;
+   
+}
+
+.exp{
+    display: flex;
+    
+    align-items: center;
+    height: 90px;
+    width: 34.2vw;
+    
+}
+</style>
+
+<body>
+    <div id="top">
+        <img id="bg" src="https://i.ytimg.com/vi/jmv9AUIq5S0/maxresdefault.jpg">
+        <div class="container">
+            <h1>THIS IS <br>MASSIVELY<br></h1>
+            <p id="para">A free fully responsive HTML5 + CSS3 site template designed by @Tanay_N for Practice<br> and
+                released for free under the <span>Creative Commons Licence</span>.
+                <br> <br><i class="fa fa-arrow-circle-down text-white fa-3x " aria-hidden="true"></i>
+            </p>
+        </div>
+    </div>
+
+    <div class="body">
+        <p id="date"> <span id="dte">October18,2004</span></p>
+        <br><br>
+        <h1 id="massive">AND THIS IS A MASSIVE HEADLINE</h1><br><br>
+        <section>
+            <p class="p1">Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis<br><br> ante sed
+                etiam magna interdum congue. Lorem ipsum dolor amet nullam<br><br> sed etiam veroeros.<br><br></p>
+        </section>
+
+        <div class="class">
+            <img style="width: fit-content;"
+                src="https://a.storyblok.com/f/112937/568x400/b07ceaa55f/cultural-faux-pas_square-568x400.jpg/m/620x0/filters:quality(70)/">
+        </div>
+        
+        <button class="full">Full Story</button>
+    </div>
+    <br><br><br>
+    
+    <div class="full_stories">
+        
+        <div class="box">
+            <div class="dat">October18,2004</div>
+            <div class="name">Macro Vision Academy</div>
+            <div class="img1"><img class="img"
+                    src="https://cdn.pixabay.com/photo/2016/09/29/13/08/planet-1702788__340.jpg">
+            </div>
+            <div class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In non, voluptates at
+                doloribus dolorum laudantium modi iste? Reiciendis deleniti quidem dolorum iure dolore quas minima, ea
+                facere blanditiis quis a!
+                <br><button class="story_b">Full Story</button>
+            </div>
+            <hr id="verti">
+        </div>
+
+        <div class="box">
+            <div class="dat">October18,2004</div>
+            <div class="name">Macro Vision Academy</div>
+            <div class="img1"><img class="img"
+                    src="https://images5.alphacoders.com/112/thumb-1920-1123013.jpg">
+            </div>
+            <div class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In non, voluptates at
+                doloribus dolorum laudantium modi iste? Reiciendis deleniti quidem dolorum iure dolore quas minima, ea
+                facere blanditiis quis a!
+                <br><button class="story_b">Full Story</button>
+            </div>
+           
+        </div>
+        <div class="box">
+            <div class="dat">October18,2004</div>
+            <div class="name">Macro Vision Academy</div>
+            <div class="img1"><img class="img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR69tT6ioW8F-jqb48YPlVDkNDd43iXz587Zg&usqp=CAU">
+            </div>
+            <div class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In non, voluptates at
+                doloribus dolorum laudantium modi iste? Reiciendis deleniti quidem dolorum iure dolore quas minima, ea
+                facere blanditiis quis a!
+                <br><button class="story_b">Full Story</button>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="dat">October18,2004</div>
+            <div class="name">Macro Vision Academy</div>
+            <div class="img1"><img class="img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEefp1OxUWSsgkxNkYiipRVGdvDXz1xAShA&usqp=CAU">
+            </div>
+            <div class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In non, voluptates at
+                doloribus dolorum laudantium modi iste? Reiciendis deleniti quidem dolorum iure dolore quas minima, ea
+                facere blanditiis quis a!
+                <br><button class="story_b">Full Story</button>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+
+    <div class="pages">
+        <button class="buttons">Previous</button>
+        <button class="buttons">1</button>
+        <button class="buttons">2</button>
+        <button class="buttons">3</button>
+        <button class="buttons">Next</button>
+    </div>
+
+    <div class="collector">
+        <div class="info">
+    
+            <label class="name">Name</label>
+            <input type="text" placeholder="Name"class="text-box">
+            
+            <label class="name">Email</label>
+            <input type="text"  placeholder="Email"class="text-box">
+            
+            <label class="name">Message</label>
+            <input type="text" class="message" placeholder="Message">
+            
+            <button id="submit">Submit</button>
+        
+    </div>
+
+
+    <div class="info2">
+        <div class="address">
+            <div class="title">Address</div>
+            <div class="exp">1234 some road #1234
+
+                Khargone X0X0</div>
+        </div>
+   
+        <div class="address">
+            <div class="title">Phone NO</div>
+            <div class="exp">+91-722**-*****
+
+              </div>
+        </div>
+        <div class="address">
+            <div class="title">Email</div>
+            <div class="exp">tanaynaik0710@gmail.com</div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

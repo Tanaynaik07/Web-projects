@@ -1,0 +1,122 @@
+#highlight{
+    height: 92vh;
+    width: 34vw;
+    display: flex;
+    justify-content: center;
+    
+    
+    border-color: red;
+  
+    border: 5px;
+    border-color: red;
+    border-style: groove;
+    align-self: center;
+}
+
+#highlight:hover{
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#background{
+    height: 79vh;
+    margin: 37px 0px;
+    display: flex;
+    width: 29vw;
+    transition: background-color 0.15s;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#main{
+    max-height: 500px;
+    
+    width: 80%;
+    
+    margin: 66px;
+}
+
+#text{
+    background-color: #1DB954;
+    text-align: center;
+    height: 12vh;
+    line-height: 71px;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+input{
+    width: 89px;
+    justify-self: end;
+}
+
+li{
+    list-style: none;
+}
+
+.input{
+    display: flex;
+}
+
+input:hover{
+    cursor: text;
+}
+
+table{
+    border-style: groove;
+    border: 5px;
+    border-color: BLUE;
+}
+
+th{
+    width: 64%;
+}
+
+tr{
+    height: 10vh;
+}
+
+th:hover{
+    cursor: pointer;
+}
+
+.signup{
+    height: 40px;
+    margin-bottom: 36px;
+    width: 114px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: height 0.15s,width 0.15s;
+}
+
+.signup:hover{
+    cursor: pointer;
+    height: 42px;
+    width: 118px;
+}
+
+#sign{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 32px;
+    max-height: 100px;
+}
+
+#input{
+    color: white;
+    background-color: rgb(44, 44, 44) ;
+}
+
+#background:hover{
+    background-color: #1914144f;
+}

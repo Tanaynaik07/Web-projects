@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book-zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .nav {
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: grey;
+        justify-content: space-around;
+    }
+
+    .gif {
+        margin-top: 20px;
+
+
+        height: 140px;
+    }
+
+    #books_container {
+        margin: 20px;
+        position: relative;
+
+        min-height: 50vh;
+        height: fit-content;
+        display: flex;
+        gap: 220px;
+        justify-content: space-between;
+        overflow-x: scroll;
+
+    }
+
+    #books_container div {
+        margin: 15px;
+        height: fit-content;
+        width: 20vw;
+        max-width: fit-content;
+        flex-shrink: 0;
+
+        min-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #books_container div img {
+        height: 80%;
+        width: 80%;
+        margin: 8px;
+    }
+
+
+
+    #books_container div button {
+        height: 30px;
+        margin: 10px;
+        display: flex;
+        min-width: 1%;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        background-color: darkslateblue;
+        color: aliceblue;
+    }
+
+    #books_container div button:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+        #books_container div button {
+            font-size: 10px;
+            /* Font size for smaller screens */
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .cover:hover {
+        background-color: grey;
+    }
+
+    .cover {
+        transition: background-color 0.15s;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+
+<body>
+    <div class="nav"><p><b>This is supposed to be a navbar with a working search bar
+        and all like this<br> But its still in development so while it is done why
+        dont you just read anything and enjoy</b></p><input type="text" placeholder="Search"></div>
+
+    <div id="books_container">
+
+        <div class="cover">
+            <img src="img/devil_cover.png">
+            <p>Type: Novel</p>
+            <p>Last update: Chapter 1 (17/05/2023)</p>
+            <p>By: Tanay Naik</p>
+            <a href="docs/Devil.docx"><button class="download" id="download_devil">Download</button></a>
+
+        </div>
+        <div><img src="img/prof cover.jpeg">
+            <p>Type: Novel</p>
+            <p>Last update: Chapter 1 (02/06/2023)</p>
+            <p>By: Tanay Naik</p>
+            <a href="docs/Prof.docx"><button class="download" id="download_prof">Download</button></a>
+</div>
+        <div>Book2</div>
+        <div>Book3</div>
+        <div>Book4</div>
+    </div>
+
+    <footer> More Coming soon!!</footer>
+</body>
+
+</html>
