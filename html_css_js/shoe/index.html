@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="final_box">
+        <div class="box"><button class="btn" onclick="location.reload()"><i
+                    class="fa-solid fa-xmark fa-lg"></i></button><span class="final_text">asdsdasd</span></div>
+    </div>
+    <header>
+        <div id="lists">
+            <ul>Home</ul>
+            <ul>About Us</ul>
+            <ul>Contact Us</ul>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"
+                    onclick="toggle_dropdown()"></i></button>
+            <div class="dropdown-content">
+                <table>
+                    <thead id="cart-items">
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                        </tr>
+
+                    </thead>
+                </table>
+                <div style="display: flex; justify-content: space-around; width: 100%;">
+
+                    <span id="buyer_name"></span>
+                    <span id="total"></span>
+                </div>
+                <button id="bill">Billing</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <section id="header" class="section">
+            <img src="img/animate.png" alt="" class="background">
+            <img src="img/red-removebg-preview1.png" class="foreground">
+            <img src="img/blue1.png" class="foreground">
+        </section>
+
+        <section id="data" class="section">
+
+            <p class="title"><b>Walk the floor with your Rizz</b></p>
+            <div class="grid-container">
+
+                <div class="grid-item"><img src="img/product1.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">First</span><br>Price:<span
+                                class="price">10,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('First', '10,000$')">Add to cart</span>
+                    </div>
+                </div>
+                <div class="grid-item"><img src="img/product2.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Second</span><br>Price:<span
+                                class="price">20,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Second', '20,000$')">Add to cart</span></div>
+                </div>
+                <div class="grid-item"><img src="img/product3.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Third</span><br>Price:<span
+                                class="price">30,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Third', '30,000$')">Add to cart</span></div>
+                </div>
+                <div class="grid-item"><img src="img/product4.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Fourth</span><br>Price:<span
+                                class="price">40,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Fourth', '40,000$')">Add to cart</span></div>
+                </div>
+                <div class="grid-item"><img src="img/product5.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Fifth</span><br>Price:<span
+                                class="price">50,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Fifth', '50,000$')">Add to cart</span></div>
+                </div>
+                <div class="grid-item"><img src="img/product6.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Sixth</span><br>Price:<span
+                                class="price">60,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Sixth', '60,000$')">Add to cart</span></div>
+                </div>
+                <div class="grid-item"><img src="img/product7.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Seventh</span><br>Price:<span
+                                class="price">70,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Seventh', '70,000$')">Add to cart</span></div>
+                </div>
+                <div class="grid-item"><img src="img/product8.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Eight</span><br>Price:<span
+                                class="price">80,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Eighth', '80,000$')">Add to cart</span></div>
+                </div>
+                <div class="grid-item"><img src="img/product9.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Ninth</span><br>Price:<span
+                                class="price">90,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Ninth', '90,000$')">Add to cart</span></div>
+                </div>
+
+                <div class="grid-item"><img src="img/product10.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Tenth</span><br>Price:<span
+                                class="price">1,00,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Tenth', '1,00,000$')">Add to cart</span></div>
+                </div>
+
+                <div class="grid-item"><img src="img/product11.png" class="product-img">
+                    <div class="info"><span>Name:<span class="name">Eleven</span><br>Price:<span
+                                class="price">1,10,000$</span></span> <span class="add_to_cart"
+                            onclick="addToCart('Eleven', '1,10,000$')">Add to cart</span></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+</body>
+<script>
+    let btn = document.querySelector("#bill");
+    btn.addEventListener("click", bill)
+    function addToCart(name, price) {
+        var cartItems = document.getElementById("cart-items");
+        var newRow = document.createElement("tr");
+        newRow.innerHTML = "<td>" + name + "</td><td class='prices'>" + price + "</td>";
+        cartItems.appendChild(newRow);
+    }
+
+
+    function bill() {
+        let total = 0;
+        let name = window.prompt("Customer's Name");
+        let list_prices = document.querySelectorAll(".prices");
+        list_prices.forEach(function (priceElement) {
+            let priceText = priceElement.textContent;
+            let formattedPrice = priceText.replace(",", "");
+            formattedPrice = formattedPrice.replace("$", "");
+            price = Number(formattedPrice);
+            total += price;
+        });
+
+        let display_price = document.querySelector("#total");
+        display_price.innerHTML = "Total: " + total + "$";
+        let buyer_name = document.querySelector("#buyer_name");
+        buyer_name.innerHTML = "Name: " + name;
+        btn.innerHTML = "Confirm";
+        btn.removeEventListener("click", bill);
+        btn.addEventListener('click', final);
+    }
+
+
+    function toggle_dropdown() {
+        let dropdown_menu = document.querySelector(".dropdown-content");
+        dropdown_menu.classList.toggle("dropdown-content-visible");
+    }
+
+    function final() {
+        let final_box = document.querySelector(".box");
+        final_box.classList.toggle("final_box_visility");
+        let fname = document.querySelector("#buyer_name").textContent.split(": ")[1];
+        let box = document.querySelector(".final_text");
+        box.innerHTML = "Thanks <b>" + fname + "</b> for Shopping with us today.";
+        final_box.classList.remove("box");
+    }
+
+
+
+
+</script>
+
+</html>

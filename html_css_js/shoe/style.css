@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    cursor: default;
+
+}
+
+.wrapper {
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    scroll-snap-type: y mandatory;
+
+    background-image: radial-gradient(white, grey, black)
+        /* Add scroll-snap properties */
+}
+
+/* Rest of the CSS code */
+
+.wrapper::-webkit-scrollbar {
+    width: 0em;
+}
+
+header {
+    width: 100%;
+    background-color: #000000;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+header ul {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#lists {
+    display: flex;
+
+}
+
+.background,
+.foreground {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-20px) scale(1);
+    z-index: 1;
+
+}
+
+.foreground {
+    transform: translateZ(-50px) scale(6);
+}
+
+#header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+#data {
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+    text-shadow: 0 0 5px #000000;
+    background-color: rgba(79, 82, 81, 0.7);
+    background-image: linear-gradient(to bottom, rgba(79, 82, 81, 0.9), rgba(10, 4, 193, 0.605));
+    z-index: 1;
+    min-height: 100vh;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.wrapper::-webkit-scrollbar {
+    width: 0em;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.title b {
+    font-family: emoji;
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 200px;
+    padding: 40px;
+}
+
+.grid-item {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 4vh;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+
+.product-img {
+    height: 30vh;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.15s;
+}
+
+.product-img:hover {
+    scale: 0.8;
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 50px black;
+    z-index: 1;
+}
+
+.add_to_cart {
+    font-weight: bold;
+    transition: all 0.15s;
+    width: fit-content;
+}
+
+.add_to_cart:hover {
+    cursor: pointer;
+    color: black;
+
+}
+
+
+.fa-cart-shopping {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.fa-cart-shopping:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    right: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    /* Position the dropdown below the cart icon */
+    right: 0px;
+    color: black;
+}
+
+.dropdown-content table {
+    padding: 5px;
+}
+
+.dropdown-content tr {
+    display: flex;
+    justify-content: center;
+
+}
+
+.dropdown-content th,
+.dropdown-content td {
+    width: 100px;
+    height: 30px;
+
+}
+
+.dropdown-content td {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content-visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+#bill {
+    width: 40%;
+    height: 30px;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+#bill:hover {
+    cursor: pointer;
+}
+
+ul:hover {
+    cursor: pointer;
+}
+
+.final_box {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+opacity: 0;
+
+}
+
+
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 35px;
+    background-color: red;
+    border: none;
+    grid-column-start: 3;
+    left: 83%;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.fa-xmark:hover{
+    cursor: pointer;
+}
+
+.final_text{
+    grid-column-start: 2;
+    position: relative;
+    top: 30%;
+    left:0%;
+    font-size: large;
+    
+}
+
+.final_box_visility{
+    display: grid;
+    opacity: 1;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 70vh;
+    width: 80vh;
+    font-style: italic;
+    background-color: aqua;
+    z-index: 2;
+    overflow:hidden;
+}
