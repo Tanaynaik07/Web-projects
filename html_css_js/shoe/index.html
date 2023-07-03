@@ -165,7 +165,11 @@
         final_box.classList.toggle("final_box_visility");
         let fname = document.querySelector("#buyer_name").textContent.split(": ")[1];
         let box = document.querySelector(".final_text");
+        let final_box1 = document.querySelector(".final_box");
+        final_box1.classList.add("final_box_shadow");
         box.innerHTML = "Thanks <b>" + fname + "</b> for Shopping with us today.";
+        let background=document.querySelector(".background");
+        background.classList.add("opacity_zero");
         final_box.classList.remove("box");
     }
 
