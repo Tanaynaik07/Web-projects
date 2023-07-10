@@ -1,0 +1,36 @@
+body{
+    background-image: url("Table.jpg");
+    text-align: center;
+    color: white;
+    font-size: 4vh;
+   }
+
+   h1{
+    color: goldenrod;
+    font-size: 8vh;
+   }
+   h2{
+    font-size: 5vh;
+    font-style: italic;
+   }
+
+  .play{
+    
+    height: 6vh;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 8%;
+    border: none;
+    color: rgb(252, 252, 252);
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    
+  }
+
+  .play:hover{
+    cursor: pointer;
+  }
+
+  #message{
+    color: red;
+  }
