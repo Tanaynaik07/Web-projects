@@ -17,11 +17,8 @@
                     class="fa-solid fa-xmark fa-lg"></i></button><span class="final_text">asdsdasd</span></div>
     </div>
     <header>
-        <div id="lists">
-            <ul>Home</ul>
-            <ul>About Us</ul>
-            <ul>Contact Us</ul>
-        </div>
+
+        <button class="logout" onclick="logout()">Logout</button>
         <div class="dropdown">
             <button class="dropbtn"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"
                     onclick="toggle_dropdown()"></i></button>
@@ -119,9 +116,12 @@
         </section>
 
     </div>
+    <footer class="footer" id="footer">
+        <p>You are now shopping as guest.</p> <br>
+        <section><a href="login.html">Login</a> or <a href="signup.html">Signup?</a></section>
+    </footer>
 
-
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
