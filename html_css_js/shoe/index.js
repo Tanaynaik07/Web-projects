@@ -10,7 +10,13 @@ let btn = document.querySelector("#bill");
 
     function bill() {
         let total = 0;
-        let name = window.prompt("Customer's Name");
+        let name;
+        if(loggedInUsername){
+        name = loggedInUsername.toUpperCase();
+        }
+        else{
+        name=prompt("Enter Customer's name:");
+        }
         let list_prices = document.querySelectorAll(".prices");
         list_prices.forEach(function (priceElement) {
             let priceText = priceElement.textContent;
@@ -47,3 +53,32 @@ let btn = document.querySelector("#bill");
         background.classList.add("opacity_zero");
         final_box.classList.remove("box");
     }
+
+    function resetFooterPosition() {
+        let footer = document.getElementById("footer")
+        footer.classList.remove("footer")
+        footer.classList.add("footer_show");
+    }
+
+    window.addEventListener("load", resetFooterPosition);
+
+    var loggedInUsername =localStorage.getItem('loggedInUsername');
+
+    if (loggedInUsername) {
+        
+        console.log('Logged in user:', loggedInUsername);
+        let footer = document.getElementById("footer")
+        footer.innerHTML = "";
+        footer.innerHTML += `<p>Welcome ${loggedInUsername}</p>`;
+        setTimeout(function () {
+            footer.classList.add("footer_go");
+        }, 4000);
+    }
+
+
+function logout(){
+    localStorage.removeItem('loggedInUsername');
+    location.reload();
+}
+
+    
